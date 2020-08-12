@@ -7,15 +7,27 @@ h1, h2, h3, h4, h5, p{
     font-family: Ubuntu;
     font-weight: normal;
 }
-
+.header {
+  background-image: url("picture.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background position: cover;
+  position: relative;
+  top: 0;
+  padding: 150px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  height: auto;
+}
 .header h1 {
   text-align: center;
-  position: absolute;
+  position: relative;
   z-index: 1;
   font-family: Alata;
   font-size: 80px;;
   color: #dbdbdb;
-  top: 30px;
+  top: -10px;
+  margin: 0 0;
 }
 
 .wizard {
@@ -44,19 +56,6 @@ animation: hue 29s ease infinite;
    50%{background-position:100% 48%}
    100%{background-position:0% 53%}
  }
-
-.picture {
-  position: relative;
-}
-
-.picture img {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    width:100%;
-    height:auto;
-    display:block;
-}
 
 .about {
   background-image: url(/static/picture3.jpg);
