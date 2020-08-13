@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: grey;
+}
 
 h1, h2, h3, h4, h5, p{
     font-family: Ubuntu;
@@ -11,20 +14,25 @@ h1, h2, h3, h4, h5, p{
   background-image: url("picture.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background position: cover;
+  background position: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
   position: relative;
   top: 0;
   padding: 150px;
   max-width: 100%;
-  margin-bottom: 20px;
   height: auto;
 }
 .header h1 {
   text-align: center;
+  max-width: 100%;
+  height: auto;
   position: relative;
   z-index: 1;
   font-family: Alata;
-  font-size: 80px;;
+  font-size: 50px;;
   color: #dbdbdb;
   top: -10px;
   margin: 0 0;
@@ -32,11 +40,11 @@ h1, h2, h3, h4, h5, p{
 
 .wizard {
   display: inline-block;
-  font-size: 110px;
+  font-size: 80px;
   text-decoration: none;
   font-family: Raleway;
   color: #d600ff;
-  background: linear-gradient(90deg, #06004e, #2f5c9a, #00e6ec, #010647);
+  background: linear-gradient(90deg, #981dee, #14caff, #1b1fff, #7f0bd0);
   background-size: 1000% 1000%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -78,4 +86,47 @@ animation: hue 29s ease infinite;
   font-size: 25px;
   padding: 10px;
   border: 3px solid #00dba0;
+}
+
+.middlenav {
+  background-color: #14f4ef;
+  width: 100%;
+  float:left;
+  padding: 0;
+  margin: 0 0;
+}
+
+.middlenav ul li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 135px;
+  padding: 0;
+  font-family: Alata;
+  position: relative;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #18181e;
+  margin: 0;
+  padding: 0;
+}
+
+nav a:hover {
+  color: #18181e;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  background-color: #18181e;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
 }
