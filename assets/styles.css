@@ -111,6 +111,7 @@ nav a {
   color: #18181e;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -129,4 +130,29 @@ nav a::after {
 
 nav a:hover::after{
   width: 100%;
+}
+main {
+  padding: 80px;
+  background-image: url('creep.jpg');
+  background-size: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.greet{
+  text-align: center;
+}
+.Wizard {
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 30;
+  float: right;
+  position: relative;
+  height: 270px;
+  width: 60%;
+  background-image: url('wizard.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
